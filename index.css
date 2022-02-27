@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+#page-wrap{
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
