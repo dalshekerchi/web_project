@@ -1,29 +1,14 @@
-// import {slide as Menu} from 'react-burger-menu'
-import './index.css'; 
-import React from "react";
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-export default this.props.first {
-    return(
-        <menu>
-            <a className="menu_item" href="/home">
-                Home
-            </a>
-            <a className="menu_item" href="/budget">
-                Budget
-            </a>
-            <a className="menu_item" href="/log_expenses">
-                Log Expenses
-            </a>
-            <a className="menu_item" href="/my_account">
-                My Account
-            </a>
-            <a className="menu_item" href="/help">
-                Help/Contact Us
-            </a>
-            <a className="menu_item" href="/">
-                Budgeting 101
-            </a>
-        </menu>
-    );
-
-};
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}

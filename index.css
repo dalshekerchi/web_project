@@ -7,3 +7,87 @@
     padding-top: 5%;
 
 }
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #053613;
+  line-height: 1.8;
+  background-color: #ffffff;
+}
+
+.welcome{
+    background-color: #02240c !important;
+    color: #ffffff;
+    padding: 15px, 10px, 15px, 10px ;
+  }
+  
+  /* Create a Parallax Effect */
+  .bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('money.jpeg');
+    opacity: 0.5;
+    min-height: 50%;
+  }
+
+  .bugeting_content{
+    width: 80%;
+    margin: auto;
+  }
+  
+  .Header{
+      text-align: center;
+      padding-bottom: 5%;
+      padding-top: 5%;
+  }
+  /* Style the button that is used to open and close the collapsible content */
+/* .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+   */
+  .collapsible {
+    background-color: #86eea4;
+    color: black;
+    cursor: pointer;
+    width: 90%;
+    height: auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    padding-left: 2%;
+    border-radius: 5px 5px; 
+}
+
+.collapsible .active {
+    background-color: #1a552b;
+}
+
+.content {
+    color: black;
+    /* max-height: 0;  */
+    overflow: auto; 
+    transition: max-height 0.2s ease-out; 
+    margin-left: 3%;
+}
+
+ul li::before {
+    color: black;
+}
